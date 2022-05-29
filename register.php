@@ -28,8 +28,6 @@ if (isset($_POST['register-submit'])) {
 
 ?>
 
-?>
-
 <!DOCTYPE html>
 <html>
 

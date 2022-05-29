@@ -27,18 +27,11 @@ if (!isset($_SESSION['loggedin'])) {
      <div class="content">
           <h2>Home Page</h2>
           <p id="welcome">Selamat Datang, <?= $_SESSION['name'] ?>!</p>
-          <script>
-               setTimeout(function() {
-                    var elem = document.getElementById("welcome");
-                    elem.parentNode.removeChild(elem);
-               }, 1000);
-          </script>
-
+         
           <ul>
                <li><a href="mahasiswa.php" style="text-decoration: none; font-weight: bold;">Kelola Data Mahasiswa</a></li>
                <li><a href="dosen.php" style="text-decoration: none; font-weight: bold;">Kelola Data Dosen</a></li>
-               <li><a href="matakuliah.php" style="text-decoration: none; font-weight: bold;">Kelola Data Mata Kuliah</a></li>
-               <li><a href="#" style="text-decoration: none; font-weight: bold;">Kelola Data ...</a></li>
+               <li><a href="mata_kuliah.php" style="text-decoration: none; font-weight: bold;">Kelola Data Mata Kuliah</a></li>
           </ul>
      </div>
 </body>

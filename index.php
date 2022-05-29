@@ -25,7 +25,7 @@ if (isset($_POST['login-submit'])) {
 			$_SESSION['loggedin'] = TRUE;
 			$_SESSION['name'] = $_POST['email'];
 			$_SESSION['id'] = $id;
-			header('Location: home.php');
+			header('Location: home.php'); // redirect page
 		} else {
 			$errorMessage =  'Email/password salah';
 		}
@@ -54,10 +54,11 @@ if (isset($_POST['login-submit'])) {
 			setTimeout(function() {
 				var elem = document.getElementById("error");
 				elem.parentNode.removeChild(elem);
-			}, 1000);
+			}, 1000); // 1000 ms / 1 detik
 		</script>
+
 		<form action="index.php" method="post">
-			<label for="username">
+			<label for="email">
 				<i class="fas fa-envelope"></i>
 			</label>
 			<input type="text" name="email" placeholder="Email" id="email" required>
